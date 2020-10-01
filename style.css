@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: manrope, sans-serif;
+    
+}
+
+body{
+    background: linear-gradient(to right, #D3CCE3, #E9E4F0);
+}
+
+
+@font-face {
+    font-family: "TESLA";
+    src: local("TESLA.ttf")
+}
+
+@font-face {
+    font-family: "manrope";
+    src: local("Manrope.ttf")
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 0, 0, 0);
+    transition: 0.5s ease;
+}
+
+
+nav ul li a:hover {
+    color: #ED213A;
+    border-bottom: 1px solid red;
+    transition: 0.5s ease;
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+
+.col-1 h2 {
+    font-family: TESLA;
+    text-transform: uppercase;
+    font-size: 54px;
+}
+
+
+.col-1 h3 {
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.col-1 p {
+
+    font-size: 16px;
+    color: #ED213A;
+    font-weight: 100px;
+
+}
+
+
+.col-1 h4 {
+
+    margin: 30px 0;
+    font-size: 20px;
+
+}
+
+
+
+button {
+    width: 150px;
+    border: 0;
+    outline: none;
+    color: white;
+    background: linear-gradient(to right, #ED213A, #93291E);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 12px 10px;
+    transition: width 0.5s;
+
+}
+
+button img {
+    width: 20px;
+    display: none;
+}
+
+
+
+button:hover img {
+    display: block;
+}
+
+
+button:hover {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.col-1:after {
+    content: "";
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(to right, #ED213A, #93291E);
+    position: absolute;
+    left: -40px;
+    top: -8px;
+}
+
+
+
+.col-2 {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+
+.col-2 img {
+    width: 90%;
+
+}
+
+.tesla-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(img/logo.png);
+    background: linear-gradient(to right, #ED213A, #93291E);
+    border-radius: 10px 0 0 10px;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+
+.tesla-box img{
+    width: 480px;
+    height: 450px;
+}
+
+
+
+.add-btn {
+  display: none;
+
+}
+
+.add-btn p {
+    text-align: center;
+    cursor: pointer;
+
+
+}
+
+
+.social-links img {
+    height: 100px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.willz {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: TESLA;
+
+}
+
+
+
+
+@media only screen and (max-width:1240px) {
+
+    nav ul {
+        width: 100%;
+        background: linear-gradient(to right, #ED213A, #93291E);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+
+    #menulist {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+        margin: 0px 0;
+    }
+
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .col-2 .tesla {
+        width: 97%;
+    }
+
+
+    .tesla-box {
+        transform: translateX(75px);
+        background: linear-gradient(to right, #ED213A, #93291E);
+        border-radius: 10px 0 0 10px;
+        
+    }
+    
+    
+    .col-2 img {
+    width: 100%;
+
+}
+
+
+    .col-1 {
+        flex-basis: 100%;
+    }
+
+
+    .col-1 h2 {
+        font-size: 34px;
+    }
+
+
+    .col-1 h3 {
+        font-size: 16px;
+    }
+
+    .col-1 p {
+
+        font-size: 16px;
+        color: #fb5283;
+        font-weight: 100px;
+
+    }
+    
+    .tesla-box img{
+        display: none;
+    }
+    
+
+ 
+    .add-btn{
+        display: block;
+        padding-bottom: 40px;
+        margin-left: -90px;
+        color: white;
+    }
+
+    .willz{
+        font-size: 16px;
+        bottom: 0;
+    }
+
+
+}
